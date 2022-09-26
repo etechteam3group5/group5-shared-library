@@ -4,7 +4,7 @@ pipeline{
 	stages{
         stage('Clone Repository'){
 					steps{
-						checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/etechteam3group5/jenkins-parallel-job.git']]])
+						echo "checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/etechteam3group5/jenkins-parallel-job.git']]])"
 					}
 				}
 		stage('parallel-level1'){
