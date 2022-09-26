@@ -1,3 +1,4 @@
+def call(String repoUrl){
 pipeline{
 	agent any
 	stages{
@@ -84,4 +85,6 @@ pipeline{
 			}
 		}
 	}	
+}
+
 }
